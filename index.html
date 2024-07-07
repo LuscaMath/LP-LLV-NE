@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="LLA Agency" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="Seja muito bem vindo(a). Sou a Dra. Laise Vieira, médica neurologista e atuo no tratamento de dores de
+    cabeça e dores crônicas.
+    Meu objetivo é te ajudar a melhorar sua qualidade de vida, sem a chateação das dores frequentes que
+    tanto atrapalham a sua qualidade de vida." />
+    <title>Dra. Laise Vieira</title>
+    <link rel="icon" type="image/x-icon" href="./imagens/logo.png">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css" />
+    <script src="https://kit.fontawesome.com/0be30a2c95.js" crossorigin="anonymous"></script>
+</head>
+
+<body data-theme="light">
+    <a class="wpp-fixed"
+        href="https://api.whatsapp.com/send/?phone=5561998766077&text=Ol%C3%A1%2C+vim+atrav%C3%A9s+do+site+e+gostaria+de+agendar+uma+consulta%21&type=phone_number&app_absent=0"
+        target="_blank"><img src="./imagens/whatsapp.png" alt="">
+    </a>
+
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup">
+            <h2>Convênios Aceitos</h2>
+            <ul>
+                <li>AFEB BRASAL</li>
+                <li>AFFEGO</li>
+                <li>ASETE (ASTE)</li>
+                <li>BACEN</li>
+                <li>CAEME - GO</li>
+                <li>CAESAN</li>
+                <li>CARE PLUS</li>
+                <li>CASEC (CODEVASF)</li>
+                <li>CASEMBRAPA (EMBRAPA)</li>
+                <li>CNTI</li>
+                <li>CONAB</li>
+                <li>EMBRATEL (TELOS)</li>
+                <li>EVIDA (ELETRONORTE)</li>
+                <li>FAPES (BNDES)</li>
+                <li>FASCAL</li>
+                <li>GAMA SAÚDE</li>
+                <li>GDF SAÚDE</li>
+                <li>GEAP</li>
+                <li>GRAVIA</li>
+                <li>LIFE EMPRESARIAL</li>
+                <li>NOTRE DAME</li>
+                <li>OMINT SAÚDE</li>
+                <li>PF SAÚDE (POLÍCIA FEDERAL)</li>
+                <li>PLAN ASSISTE (MPU)</li>
+                <li>PLAS/JMU (STM)</li>
+                <li>POSTAL SAÚDE (ECT)</li>
+                <li>PROASA</li>
+                <li>PRÓ-SAÚDE (CÂMARA DOS DEPUTADOS)</li>
+                <li>PRÓ-SAÚDE (TJDFT)</li>
+                <li>PRÓ-SER (STJ)</li>
+                <li>PRÓ-SOCIAL (TRF)</li>
+                <li>REAL GRANDEZA (DEMAIS PLANOS)</li>
+                <li>REAL GRANDEZA (SALVUS E SALUTEM)</li>
+                <li>SAÚDE CAIXA</li>
+                <li>SAÚDE PETROBRAS</li>
+                <li>SERPRO</li>
+                <li>SIS SENADO</li>
+                <li>STF-MED (STF)</li>
+                <li>TRE SAÚDE</li>
+                <li>TRT SAÚDE</li>
+                <li>TST SAÚDE</li>
+                <li>UNAFISCO (SINDIFISCO)</li>
+            </ul>
+            <button class="close-btn" onclick="hidePopup()">Fechar</button>
+        </div>
+    </div>
+
+    <header id="header">
+        <img class="logo" src="./imagens/logo.png" alt="">
+        <nav id="navigation">
+            <a href="#">Home</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#diferenciais">Diferenciais</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#footer">Contato</a>
+        </nav>
+        <img id="menu-hamburger" class="hamburger" src="./imagens/hamburger.svg" alt="">
+        <div class="switch-container">
+            <label class="theme-switch">
+                <input type="checkbox" class="theme-switch__checkbox" id="theme-switch">
+                <div class="theme-switch__container">
+                    <div class="theme-switch__clouds"></div>
+                    <div class="theme-switch__stars-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 55" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M135.831 3.00688C135.055 3.85027 134.111 4.29946 133 4.35447C134.111 4.40947 135.055 4.85867 135.831 5.71123C136.607 6.55462 136.996 7.56303 136.996 8.72727C136.996 7.95722 137.172 7.25134 137.525 6.59129C137.886 5.93124 138.372 5.39954 138.98 5.00535C139.598 4.60199 140.268 4.39114 141 4.35447C139.88 4.2903 138.936 3.85027 138.16 3.00688C137.384 2.16348 136.996 1.16425 136.996 0C136.996 1.16425 136.607 2.16348 135.831 3.00688ZM31 23.3545C32.1114 23.2995 33.0551 22.8503 33.8313 22.0069C34.6075 21.1635 34.9956 20.1642 34.9956 19C34.9956 20.1642 35.3837 21.1635 36.1599 22.0069C36.9361 22.8503 37.8798 23.2903 39 23.3545C38.2679 23.3911 37.5976 23.602 36.9802 24.0053C36.3716 24.3995 35.8864 24.9312 35.5248 25.5913C35.172 26.2513 34.9956 26.9572 34.9956 27.7273C34.9956 26.563 34.6075 25.5546 33.8313 24.7112C33.0551 23.8587 32.1114 23.4095 31 23.3545ZM0 36.3545C1.11136 36.2995 2.05513 35.8503 2.83131 35.0069C3.6075 34.1635 3.99559 33.1642 3.99559 32C3.99559 33.1642 4.38368 34.1635 5.15987 35.0069C5.93605 35.8503 6.87982 36.2903 8 36.3545C7.26792 36.3911 6.59757 36.602 5.98015 37.0053C5.37155 37.3995 4.88644 37.9312 4.52481 38.5913C4.172 39.2513 3.99559 39.9572 3.99559 40.7273C3.99559 39.563 3.6075 38.5546 2.83131 37.7112C2.05513 36.8587 1.11136 36.4095 0 36.3545ZM56.8313 24.0069C56.0551 24.8503 55.1114 25.2995 54 25.3545C55.1114 25.4095 56.0551 25.8587 56.8313 26.7112C57.6075 27.5546 57.9956 28.563 57.9956 29.7273C57.9956 28.9572 58.172 28.2513 58.5248 27.5913C58.8864 26.9312 59.3716 26.3995 59.9802 26.0053C60.5976 25.602 61.2679 25.3911 62 25.3545C60.8798 25.2903 59.9361 24.8503 59.1599 24.0069C58.3837 23.1635 57.9956 22.1642 57.9956 21C57.9956 22.1642 57.6075 23.1635 56.8313 24.0069ZM81 25.3545C82.1114 25.2995 83.0551 24.8503 83.8313 24.0069C84.6075 23.1635 84.9956 22.1642 84.9956 21C84.9956 22.1642 85.3837 23.1635 86.1599 24.0069C86.9361 24.8503 87.8798 25.2903 89 25.3545C88.2679 25.3911 87.5976 25.602 86.9802 26.0053C86.3716 26.3995 85.8864 26.9312 85.5248 27.5913C85.172 28.2513 84.9956 28.9572 84.9956 29.7273C84.9956 28.563 84.6075 27.5546 83.8313 26.7112C83.0551 25.8587 82.1114 25.4095 81 25.3545ZM136 36.3545C137.111 36.2995 138.055 35.8503 138.831 35.0069C139.607 34.1635 139.996 33.1642 139.996 32C139.996 33.1642 140.384 34.1635 141.16 35.0069C141.936 35.8503 142.88 36.2903 144 36.3545C143.268 36.3911 142.598 36.602 141.98 37.0053C141.372 37.3995 140.886 37.9312 140.525 38.5913C140.172 39.2513 139.996 39.9572 139.996 40.7273C139.996 39.563 139.607 38.5546 138.831 37.7112C138.055 36.8587 137.111 36.4095 136 36.3545ZM101.831 49.0069C101.055 49.8503 100.111 50.2995 99 50.3545C100.111 50.4095 101.055 50.8587 101.831 51.7112C102.607 52.5546 102.996 53.563 102.996 54.7273C102.996 53.9572 103.172 53.2513 103.525 52.5913C103.886 51.9312 104.372 51.3995 104.98 51.0053C105.598 50.602 106.268 50.3911 107 50.3545C105.88 50.2903 104.936 49.8503 104.16 49.0069C103.384 48.1635 102.996 47.1642 102.996 46C102.996 47.1642 102.607 48.1635 101.831 49.0069Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <div class="theme-switch__circle-container">
+                        <div class="theme-switch__sun-moon-container">
+                            <div class="theme-switch__moon">
+                                <div class="theme-switch__spot"></div>
+                                <div class="theme-switch__spot"></div>
+                                <div class="theme-switch__spot"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </label>
+            <div id="info-balloon" class="show">
+                <p>Está com crise de enxaqueca? Alterne para o tema escuro</p>
+            </div>
+        </div>
+        </div>
+    </header>
+    <section class="main-section">
+        <div class="text-content">
+            <div>
+                <h2>LVV</h2>
+                <h2>NEUROLOGIA</h2>
+            </div>
+            <h3>Venha Cuidar da Sua Saúde</h3>
+            <p>Seja muito bem vindo(a). Sou a Dra. Laise Vieira, médica neurologista e atuo no tratamento de dores de
+                cabeça e dores crônicas.
+                Meu objetivo é te ajudar a melhorar sua qualidade de vida, sem a chateação das dores frequentes que
+                tanto atrapalham a sua qualidade de vida.</p>
+            <div class="main-icons">
+                <ul class="wrapper">
+                    <li class="icon instagram">
+                        <a target="_blank" href="https://www.instagram.com/dralaisevieira/"><span><i
+                                    class="fab fa-instagram"></i></span></a>
+                    </li>
+                    <li class="icon facebook">
+                        <a target="_blank" href="#"><span><i class="fab fa-tiktok"></i></span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="img-content">
+            <img src="./imagens/doutora.png" alt="Foto da doutora Laís com os braços cruzados">
+        </div>
+    </section>
+    <section class="especialidades" id="servicos">
+        <h1 class="espec-title">Sofre com <span class="span-darker">dores de cabeça</span> constantes?</h1>
+        <p class="espec-paragraph">Não se preocupe. Talvez você já tenha tentado de tudo para aliviar, ou até mesmo para
+            se livrar das crises. Mas será que realmente já tentou de tudo? Conheça um pouco dos principais
+            procedimentos destinados especificamente ao combate às dores de cabeça</p>
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="card">
+                    <img src="./imagens/brain.svg" class="brain" alt="Imagem 1">
+                    <h2>Bloqueio anestésico de nervos cranianos</h2>
+                    <p>O bloqueio dos nervos cranianos tem por objetivo auxiliar o tratamento medicamentoso e não
+                        medicamentoso das cefaleias, reduzindo a intensidade, a frequência e a duração da dor,
+                        melhorando a qualidade de vida e contribuindo para o alívio mais rápido dos sintomas. É um
+                        procedimento minimamente invasivo que consiste na infiltração de anestésico local nas
+                        proximidades de nervos cranianos envolvidos na sensibilidade da região dolorosa, podendo se
+                        associar a corticoides. Promove dessa forma, rápido alívio da dor. Em outras palavras, é um
+                        procedimento repressivo, onde o paciente chega em crise e, após o procedimento, sai sem dor ou
+                        com a dor significativamente reduzida.</p>
+                </div>
+                <div class="card">
+                    <img src="./imagens/syringe.svg" class="syringe" alt="Imagem 2">
+                    <h2>Aplicação de toxina botulínica (BOTOX)</h2>
+                    <p> É um tratamento preventivo da enxaqueca crônica. A Toxina Botulínica possui nível 1A de
+                        evidência médica, sendo muito eficaz para reduzir e espaçar as crises. Dependendo do organismo,
+                        o paciente, desde que siga o seu tratamento, consegue ficar sem crises e dores de cabeça.</p>
+                </div>
+                <div class="card">
+                    <img src="./imagens/needle.svg" class="needle" alt="Imagem 3">
+                    <h2>Agulhamento seco</h2>
+                    <p>O agulhamento a seco é um procedimento que envolve o uso de uma agulha muito fina, que ao ser
+                        inserida e manipulada por meio da pele estimula um ponto-gatilho muscular. Ao penetrar esse
+                        ponto é produzida uma resposta de contração local, o que sugere a estimulação do ponto-gatilho,
+                        e que haverá, portanto, uma resposta terapêutica. O tratamento é bastante seguro e eficaz,
+                        oferecendo benefícios imediatos, embora mais de uma sessão possa ser necessária para eliminar
+                        totalmente o ponto-gatilho. Em se tratando de dor de cabeça, a aplicação do agulhamento a seco
+                        em paciente com cefaleia tensional e ponto gatinho, é eficaz e seguro na redução da frequência e
+                        na intensidade da dor de cabeça, aumentando, assim, a qualidade de vida.</p>
+                </div>
+                <div class="card">
+                    <img src="./imagens/vaccine-svgrepo-com.svg" class="mesoterapia" alt="Imagem 3">
+                    <h2>MESOTERAPIA</h2>
+                    <p>A mesoterapia é uma técnica minimamente invasiva que envolve a injeção de doses mínimas de
+                        medicamentos (anestésico, anti-inflamatório e/ou corticóide) no mesoderma, camada média da pele,
+                        para tratar a dor. A mesoterapia tem uma atuação direta sobre a inflamação local e por isso pode
+                        ser uma excelente opção para tratamento de diversas dores como, por exemplo, artroses, bursites,
+                        entorses, lesões musculares, lombalgias, nevralgias e tendinites. É bastante eficaz no
+                        tratamento da dor.</p>
+                </div>
+                <div class="card">
+                    <img src="./imagens/electric-refueling-svgrepo-com.svg" class="eletric" alt="Imagem 3">
+                    <h2>TENS - Estimulação Elétrica Transcutânea</h2>
+                    <p>É uma técnica simples e eficiente utilizada para o alívio da dor. Esta modalidade terapêutica
+                        promove analgesia, através da emissão de estímulos elétricos à pele por meio de eletrodos
+                        posicionados na pele, nas áreas dolorosas ou nas áreas próximas a elas.</p>
+                </div>
+                <!-- Adicione mais cards conforme necessário -->
+            </div>
+            <button class="prev" onclick="prevCard()">&#10094;</button>
+            <button class="next" onclick="nextCard()">&#10095;</button>
+        </div>
+    </section>
+    <section class="diferenciais" id="diferenciais">
+        <div class="dif-top">
+            <div class="dif-top-item">
+                <img class="dif-top-img" src="./imagens/dif-img1.jpg" alt="">
+            </div>
+            <div class="dif-top-item dif-text">
+                <img src="./imagens/headache.png" alt="">
+                <h3>Porque nos escolher</h3>
+                <p>Nossa clínica combina experiência, qualificação e uma equipe multidisciplinar, utilizando tecnologia
+                    avançada e tratamentos inovadores. Oferecemos atendimento personalizado, resultados comprovados e
+                    testemunhos positivos de pacientes. Localização acessível, parcerias e certificações garantem a
+                    qualidade. Consultas detalhadas e seguimento contínuo asseguram um cuidado completo e eficiente.
+                </p>
+                <a href="https://api.whatsapp.com/send/?phone=5561998766077&text=Ol%C3%A1%2C+vim+atrav%C3%A9s+do+site+e+gostaria+de+agendar+uma+consulta%21&type=phone_number&app_absent=0"
+                    target="_blank" class="diff-btn">Saiba Mais</a>
+            </div>
+            <div class="dif-top-item">
+                <img class="dif-top-img" src="./imagens/dif-img2.jpg" alt="">
+            </div>
+        </div>
+        <div class="dif-bottom">
+            <div class="dif-bottom-item">
+                <i class="fa-solid fa-brain dif-icons"></i>
+                <h3>Referência em enxaqueca</h3>
+                <p>A LVV é referência em Dores de cabeça e enxaqueca desde sua inauguração.
+                </p>
+                <button class="dif-buttons">Saiba Mais</button>
+            </div>
+            <div class="dif-bottom-item">
+                <i class="fa-solid fa-house-medical dif-icons"></i>
+                <h3>Tudo em um só lugar</h3>
+                <p>Sem precisar de deslocamento extra, você faz tudo em um só lugar.
+                </p>
+                <button class="dif-buttons">Saiba Mais</button>
+            </div>
+            <div class="dif-bottom-item">
+                <i class="fa-solid fa-book-medical dif-icons"></i>
+                <h3>Convênios</h3>
+                <p>Temos uma grande cartela de convênios para melhor lhe atender.
+                </p>
+                <button class="dif-button" onclick="showPopup()">Lista</button>
+            </div>
+        </div>
+    </section>
+    <section class="sobre-team">
+        <h2 class="sobre-title">Sobre a Nossa Equipe</h2>
+        <div class="team-section">
+            <div class="team-member right-image">
+                <div class="text">
+                    <h2>Titulo</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, iure.</p>
+                </div>
+                <img src="https://via.placeholder.com/200" alt="Dr. João Silva">
+            </div>
+            <div class="team-member left-image">
+                <div class="text">
+                    <h2>Titulo</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, iure.</p>
+                </div>
+                <img src="https://via.placeholder.com/200" alt="Dr. Ana Pereira">
+            </div>
+            <div class="team-member right-image">
+                <div class="text">
+                    <h2>Titulo</h2>        
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, iure.</p>
+                </div>
+                <img src="https://via.placeholder.com/200" alt="Dr. Carlos Oliveira">
+            </div>
+        </div>
+    </section>
+    <section class="fotos">
+        <h2>Conheça Nossas Instalações</h2>
+        <div class="photo-container">
+            <div class="photo-item">
+                <img src="./imagens/imagem1.jpg" alt="">
+                <div class="foto-bg"></div>
+            </div>
+            <div class="photo-item">
+                <img src="./imagens/imagem2.jpg" alt="">
+                <div class="foto-bg"></div>
+            </div>
+        </div>
+        <div class="photo-container">
+            <div class="photo-item">
+                <div class="foto-bg"></div>
+                <img src="./imagens/imagem3.jpg" alt="">
+            </div>
+            <div class="photo-item">
+                <div class="foto-bg"></div>
+                <img src="./imagens/imagem4.jpg" alt="">
+            </div>
+        </div>
+        <div class="photo-container remove-borders">
+            <div class="photo-item">
+                <img src="./imagens/imagem5.jpg" alt="">
+                <div class="foto-bg"></div> 
+            </div>
+            <div class="photo-item">
+                <img src="./imagens/imagem6.jpg" alt="">
+                <div class="foto-bg"></div>
+            </div>
+        </div>
+    </section>
+    <section id="carousel-section">
+        <h2>O que nossos clientes dizem!</h2>
+        <div class="slick-carousel">
+            <div><img src="./imagens/feed-1.png" alt="Imagem 1"></div>
+            <div><img src="./imagens/feed-2.png" alt="Imagem 2"></div>
+            <div><img src="./imagens/feed-3.png" alt="Imagem 3"></div>
+            <div><img src="./imagens/feed-4.png" alt="Imagem 4"></div>
+            <div><img src="./imagens/feed-5.png" alt="Imagem 5"></div>
+        </div>
+    </section>
+    <footer class="footer" id="footer">
+        <div class="top-part-footer">
+            <div class="img-footer">
+                <img class="footer-logo" src="./imagens/logo.png" alt="">
+            </div>
+            <div class="infos-footer">
+                <div class="socials-footer">
+                    <h3 class="socials-title">Siga-nos:</h3>
+                    <div class="footer-icon">
+                        <a href="https://www.instagram.com/dralaisevieira/" target="_blank"><i
+                                class="fa-brands fa-instagram insta-ico"></i></a>
+                        <a href="#" target="_blank"><i class="fa-brands fa-tiktok tik-ico"></i></a>
+                    </div>
+                </div>
+                <div class="socials-footer">
+                    <h3 class="socials-title">Como chegar:</h3>
+                    <div class="footer-icon">
+                        <a href="#" target="_blank"><i class="fa-brands fa-waze waze-ico"></i></a>
+                        <a href="#" target="_blank"><i class="fa-solid fa-location-dot loc-ico"></i></a>
+                    </div>
+                </div>
+            </div>
+            <iframe class="maps"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15354.645907993627!2d-47.9281611!3d-15.8217941!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a31738aadbebf%3A0x2c90031240ddb8b4!2sLVV%20Neurologia!5e0!3m2!1spt-PT!2sbr!4v1717123490647!5m2!1spt-PT!2sbr"
+                width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="bottom-part-footer">
+            <p>Copyright © LVV 2024 | Desenvolvido por <a target="_blank"
+                    href="https://www.instagram.com/lla.agency/">L.L.A</a></p>
+        </div>
+    </footer>
+    <!-- jQuery (necessário para Slick Carousel) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- JS da Slick Carousel -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+    <script src="script.js"></script>
+    <script src="carousel.js"></script>
+</body>
+
+</html>
