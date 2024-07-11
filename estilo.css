@@ -1018,7 +1018,6 @@ body::-webkit-scrollbar-thumb:hover {
     cursor: pointer;
     border-radius: 50%;
     font-size: 1.5em;
-    z-index: 100;
 }
 
 .prev {
@@ -1039,7 +1038,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 @media (max-width: 768px) { 
     .especialidades {
-        padding: 2rem 0;
+        padding: 2rem 0 0 0;
     }
     .especialidades .espec-title {
         font-size: 2rem;
@@ -1050,7 +1049,12 @@ body::-webkit-scrollbar-thumb:hover {
         width: 90%;
         font-size: 1rem;
     }
-
+    .carousel-container {
+        border-radius: 0;
+    }
+    .card {
+        border-radius: 0;
+    }
     .card h2 {
         font-size: 1.5em;
     }
@@ -1060,6 +1064,7 @@ body::-webkit-scrollbar-thumb:hover {
     }
 
     .card img {
+        border-radius: 0;
         width: 100px;  /* Ajusta a largura da imagem */
     }
 
@@ -1110,7 +1115,6 @@ body::-webkit-scrollbar-thumb:hover {
 /*Diferencias*/
 
 .diferenciais {
-    margin-top: 3rem;
     width: 100%;
     background-color: var(--main-collor);
 }
@@ -1447,7 +1451,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 @media (max-width: 768px) {
     .sobre-team {
-        padding: 2rem 0;
+        padding: 2rem 0 0 0;
     }
     .sobre-team .sobre-title {
         font-size: 2rem;
@@ -1580,9 +1584,10 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .footer-logo {
-    background-color: var(--second-collor);
+    background-color: var(--bg-color);
     padding: 1rem;
     width: 150px;
+    border-radius: 0.5rem;
 }
 
 .top-part-footer {
