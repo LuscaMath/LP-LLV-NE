@@ -52,6 +52,7 @@ toggle.addEventListener('click', () => {
         document.querySelector('.needle').setAttribute('src', 'imagens/needle-dark.svg')
         document.querySelector('.mesoterapia').setAttribute('src', 'imagens/vaccine-svgrepo-com-dark.svg')
         document.querySelector('.eletric').setAttribute('src', 'imagens/electric-refueling-svgrepo-dark.svg')
+        document.querySelector('.foto-clinica').setAttribute('src', 'imagens/img-black.jpg')
         body.dataset.theme = 'dark'
     } else {
         root.style.setProperty('--bg-color', '#ffffff')
@@ -66,6 +67,7 @@ toggle.addEventListener('click', () => {
         document.querySelector('.needle').setAttribute('src', 'imagens/needle.svg')
         document.querySelector('.mesoterapia').setAttribute('src', 'imagens/vaccine-svgrepo-com.svg')
         document.querySelector('.eletric').setAttribute('src', 'imagens/electric-refueling-svgrepo-com.svg')
+        document.querySelector('.foto-clinica').setAttribute('src', 'imagens/img-white.jpg')
         body.dataset.theme = 'light'
     }
 })

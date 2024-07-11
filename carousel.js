@@ -61,3 +61,31 @@ function nextCard() {
 function prevCard() {
   showCard(currentIndex - 1);
 }
+
+let sobreCurrentIndex = 0;
+
+function sobreShowSlide(index) {
+    const slides = document.querySelectorAll('.sobre-carousel-item');
+    if (index >= slides.length) {
+        sobreCurrentIndex = 0;
+    } else if (index < 0) {
+        sobreCurrentIndex = slides.length - 1;
+    } else {
+        sobreCurrentIndex = index;
+    }
+    const offset = -sobreCurrentIndex * 100;
+    document.querySelector('.sobre-carousel-inner').style.transform = `translateX(${offset}%)`;
+}
+
+function sobreNextSlide() {
+    sobreShowSlide(sobreCurrentIndex + 1);
+}
+
+function sobrePrevSlide() {
+    sobreShowSlide(sobreCurrentIndex - 1);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    sobreShowSlide(sobreCurrentIndex);
+});
+
