@@ -1559,7 +1559,7 @@ body::-webkit-scrollbar-thumb:hover {
 .slick-slide img {
     display: block;
     margin: auto;
-    width: 100%;
+    width: 95%;
 }
 .slick-slide.slick-center img {
     filter: none; /* Remove desfoque do slide central */

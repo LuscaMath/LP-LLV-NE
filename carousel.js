@@ -2,7 +2,7 @@ $(document).ready(function () {
   $('.slick-carousel').slick({
     centerMode: true,
     centerPadding: '60px', // Ajustado para evitar overflow
-    slidesToShow: 3,
+    slidesToShow: 2,
     arrows: true, // Habilitar botões de navegação
     prevArrow: '<button type="button" class="slick-prev">Previous</button>',
     nextArrow: '<button type="button" class="slick-next">Next</button>',
@@ -10,7 +10,7 @@ $(document).ready(function () {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           centerPadding: '40px'
         }
       },
