@@ -2,15 +2,22 @@ $(document).ready(function () {
   $('.slick-carousel').slick({
     centerMode: true,
     centerPadding: '60px', // Ajustado para evitar overflow
-    slidesToShow: 2,
+    slidesToShow: 3,
     arrows: true, // Habilitar botões de navegação
     prevArrow: '<button type="button" class="slick-prev">Previous</button>',
     nextArrow: '<button type="button" class="slick-next">Next</button>',
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1600,
         settings: {
           slidesToShow: 2,
+          centerPadding: '60px'
+        }
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
           centerPadding: '40px'
         }
       },
